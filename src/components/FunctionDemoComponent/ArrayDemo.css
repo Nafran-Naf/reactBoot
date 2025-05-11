@@ -1,0 +1,57 @@
+/* .plantContainer{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid red;
+}
+.imgPlant{
+  height: 200px;
+  width: 160px;
+} */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin: 0 0 0.5rem;
+  color: #1a7131;
+}
+
+.plantDes,
+.plantCare
+{
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+.plantPrice{
+  color: red;
+}
